@@ -15,21 +15,19 @@ function ReelPage() {
   }, []);
 
   return (
-    <div className="absolute inset-0">
+    <>
       {hasWindow && (
-        <div className="relative pt-[56.25%]">
-          <ReactPlayer
-            width={"100%"}
-            height={"100%"}
-            playsinline
-            muted={true}
-            playing={true}
-            url={"https://www.youtube.com/watch?v=HtReHGjxXfM"}
-            style={{ position: "absolute", top: 0, left: 0 }}
-          />
-        </div>
+        <ReactPlayer
+          width={"100%"}
+          height={"100%"}
+          playsinline
+          muted={true}
+          playing={true}
+          url={"https://www.youtube.com/watch?v=HtReHGjxXfM"}
+          style={{ position: "absolute", inset: 0 }}
+        />
       )}
-    </div>
+    </>
   );
 }
 
