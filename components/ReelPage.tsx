@@ -9,7 +9,7 @@ type Props = {};
 function ReelPage({}: Props) {
   const url = "https://www.youtube.com/watch?v=HtReHGjxXfM";
   return (
-    <div className="min-h-[90vh] flex justify-center items-center">
+    <div className="min-h-[80vh] flex justify-center items-center">
       <motion.div
         initial={{
           opacity: 0,
@@ -20,7 +20,7 @@ function ReelPage({}: Props) {
         transition={{
           duration: 2.3,
         }}
-        className="relative h-[80vh] w-[90vw]"
+        className="relative h-[70vh] md:h-[80vh] w-[90vw]"
       >
         <ReactPlayer
           width={"100%"}
