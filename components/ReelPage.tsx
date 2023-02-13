@@ -15,32 +15,20 @@ function ReelPage() {
   }, []);
 
   return (
-    <div className="min-h-[80vh] flex justify-center items-center">
-      <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{
-          duration: 2.3,
-        }}
-      >
-        {hasWindow && (
-          <div className="h-[70vh] md:h-[80vh] w-[90vw]">
-            <ReactPlayer
-              width={"100%"}
-              height={"100%"}
-              playsinline
-              muted={true}
-              playing={true}
-              url={"https://www.youtube.com/watch?v=HtReHGjxXfM"}
-              style={{ position: "absolute", inset: 0 }}
-            />
-          </div>
-        )}
-      </motion.div>
+    <div className="absolute inset-0">
+      {hasWindow && (
+        <div className="relative pt-[56.25%]">
+          <ReactPlayer
+            width={"100%"}
+            height={"100%"}
+            playsinline
+            muted={true}
+            playing={true}
+            url={"https://www.youtube.com/watch?v=HtReHGjxXfM"}
+            style={{ position: "absolute", top: 0, left: 0 }}
+          />
+        </div>
+      )}
     </div>
   );
 }
