@@ -28,7 +28,7 @@ function ReelPage() {
         }}
       >
         {hasWindow && (
-          <div className="relative h-[70vh] md:h-[80vh] w-[90vw]">
+          <div className="h-[70vh] md:h-[80vh] w-[90vw]">
             <ReactPlayer
               width={"100%"}
               height={"100%"}
