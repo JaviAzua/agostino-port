@@ -1,14 +1,31 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 type Props = {};
 
 function Header({}: Props) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 flex items-center justify-around py-6 z-50">
+    <header
+      className={`${
+        scrolled ? "bg-blackB" : "bg-transparent"
+      } sticky top-0 flex items-center justify-around py-6 z-50 transition-all duration-[100] ease-in`}
+    >
       <div>
         <Image
           src={"/logoW.svg"}
