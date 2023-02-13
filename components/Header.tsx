@@ -40,7 +40,7 @@ function Header({}: Props) {
           }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.9 }}
-          className="flex gap-20"
+          className="flex gap-5 md:gap-20"
         >
           <motion.li
             whileHover={{ scale: 1.1 }}
