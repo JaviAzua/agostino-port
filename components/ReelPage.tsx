@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
 
 type Props = {};
