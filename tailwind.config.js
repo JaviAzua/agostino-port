@@ -14,7 +14,7 @@ module.exports = {
         lBrown: "#B88F73",
         orangeP: "#FFD2B5",
         orangeL: "#ED8F49",
-        orangeM: "#ED8F49",
+        orangeM: "#E79E22",
         brownM: "#5C2A09",
         brownD: "#2E1612",
         blackB: "#0F1217",

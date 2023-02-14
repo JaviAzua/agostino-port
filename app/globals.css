@@ -12,4 +12,10 @@
   .listItem {
     @apply font-bold tracking-wide text-lg cursor-pointer drop-shadow-md;
   }
+  .textParraf {
+    @apply text-sm font-medium;
+  }
+  .iconAbout {
+    @apply w-10 h-10 text-white/50;
+  }
 }
