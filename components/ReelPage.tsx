@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-import { motion } from "framer-motion";
 
 function ReelPage() {
   const [hasWindow, setHasWindow] = useState(false);
@@ -23,8 +22,9 @@ function ReelPage() {
           playsinline
           muted={true}
           playing={true}
-          url={"https://www.youtube.com/watch?v=HtReHGjxXfM"}
-          style={{ position: "absolute", inset: 0 }}
+          url={"https://vimeo.com/798770150"}
+          loop
+          style={{ position: "absolute", inset: 0, zIndex: 5 }}
         />
       )}
     </>

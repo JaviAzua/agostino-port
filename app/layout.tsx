@@ -20,7 +20,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={(roboto.className, "h-[120vh]")}>
+      <body className={(roboto.className, "bg-blackB")}>
         <Header />
         {children}
       </body>

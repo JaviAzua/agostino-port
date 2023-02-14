@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply text-white;
+  }
+}
+
 @layer components {
   .listItem {
-    @apply font-bold tracking-wide text-lg cursor-pointer text-white drop-shadow-md;
+    @apply font-bold tracking-wide text-lg cursor-pointer drop-shadow-md;
   }
 }
