@@ -24,17 +24,17 @@ function About({}: Props) {
 
   return (
     <>
-      <h2 className="text-gray-500 flex text-center justify-center font-semibold text-2xl tracking-[2rem]">
+      <h2 className="ml-10 md:ml-0 text-gray-500 flex text-center justify-center font-semibold text-2xl tracking-[2rem]">
         About
       </h2>
       <div className="max-w-[80%] min-h-[60vh] mx-auto px-10 flex justify-center items-center">
         <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center ">
-          <div className="relative py-10 w-[15rem] h-[20rem] md:w-80 md:h-[20rem]">
+          <div className="relative py-10 w-80 h-[20rem]">
             <Image
               src={"/FotoGonza.jpeg"}
               alt=""
               fill
-              className="object-cover md:rounded-full "
+              className="object-cover rounded-full "
             />
           </div>
 

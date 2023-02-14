@@ -27,8 +27,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className=" min-h-screen">
-        <div className="pt-10">
+      <section
+        id="projects"
+        className="flex justify-center items-center min-h-screen"
+      >
+        <div className="pt-10 w-full">
           <ProjectsGrid />
         </div>
       </section>
