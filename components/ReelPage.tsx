@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+import { HiSpeakerWave } from "react-icons/hi2";
 
 function ReelPage() {
   const [hasWindow, setHasWindow] = useState(false);
@@ -16,16 +17,24 @@ function ReelPage() {
   return (
     <>
       {hasWindow && (
-        <ReactPlayer
-          width={"100%"}
-          height={"100%"}
-          playsinline
-          muted={true}
-          playing={true}
-          url={"https://vimeo.com/798770150"}
-          loop
-          style={{ position: "absolute", inset: 0, zIndex: 5 }}
-        />
+        <>
+          <HiSpeakerWave
+            onClick={() => setMuted(!muted)}
+            className="absolute z-[99] top-32 cursor-pointer w-12 h-12 "
+          />
+          <div>
+            <ReactPlayer
+              width={"100%"}
+              height={"100%"}
+              playsinline
+              muted={muted}
+              playing={true}
+              url={"https://vimeo.com/799147188"}
+              loop
+              style={{ position: "absolute", inset: 0, zIndex: 5 }}
+            />
+          </div>
+        </>
       )}
     </>
   );
