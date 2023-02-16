@@ -66,6 +66,15 @@ function Header({}: Props) {
               <ul className="py-10 text-2xl font-semibold flex flex-col gap-20">
                 <Link
                   onClick={() => setMenuOpen(!menuOpen)}
+                  to="reel"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  <li className="burguerMenu">Home</li>
+                </Link>
+                <Link
+                  onClick={() => setMenuOpen(!menuOpen)}
                   to="about"
                   spy={true}
                   smooth={true}
