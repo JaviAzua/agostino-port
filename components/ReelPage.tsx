@@ -23,12 +23,12 @@ function ReelPage() {
           {ismuted ? (
             <HiSpeakerXMark
               onClick={() => setIsMuted(!ismuted)}
-              className="absolute opacity-80 md:bottom-[25%] lg:bottom-[20%] left-[5%] lg:left-14 z-[45] cursor-pointer w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12  "
+              className="absolute sm:bottom-12 opacity-80 md:bottom-[25%] lg:bottom-[20%] left-[5%] lg:left-14 z-[45] cursor-pointer w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12  "
             />
           ) : (
             <HiSpeakerWave
               onClick={() => setIsMuted(!ismuted)}
-              className="absolute opacity-80 md:bottom-[25%] lg:bottom-[20%] left-[5%] lg:left-14 z-[45] cursor-pointer w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12  "
+              className="absolute sm:bottom-12 opacity-80 md:bottom-[25%] lg:bottom-[20%] left-[5%] lg:left-14 z-[45] cursor-pointer w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12  "
             />
           )}
 

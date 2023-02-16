@@ -16,7 +16,7 @@ export default function Home() {
           className="min-h-[50vh] md:min-h-[70vh] lg:min-h-[90vh]"
         >
           <div className="absolute inset-0">
-            <div className="relative pt-[56.25%] min-h-[70vh] select-none">
+            <div className="relative pt-[56.25%] min-h-[60vh] select-none">
               <ReelPage />
             </div>
           </div>

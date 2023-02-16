@@ -29,7 +29,7 @@ function About({}: Props) {
       </h2>
       <div className="max-w-[80%] min-h-[60vh] mx-auto flex justify-center items-center p-5">
         <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center ">
-          <div className="relative py-10 w-80 h-[20rem]">
+          <div className="relative py-10 w-52 h-52 sm:w-60 sm:h-60  md:w-80 md:h-80">
             <Image
               src={"/FotoGonza.jpeg"}
               alt=""
