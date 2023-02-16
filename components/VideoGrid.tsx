@@ -29,11 +29,11 @@ function VideoGrid({ video }: Props) {
           onMouseLeave={() => setPlaying(false)}
           className="relative min-w-full flex justify-center group"
         >
-          <div className="absolute opacity-0 bg-orangeL rounded-sm z-40 group-hover:opacity-100  flex justify-center items-center flex-col max-w-[80%] translate-y-80 transition-all duration-1000">
-            <h4 className="text-lg">{video.title}</h4>
+          <div className="absolute bottom-0 left-0 opacity-0 bg-orangeL/50  rounded-sm z-40 group-hover:opacity-100  flex  flex-col max-w-[80%]  transition-all duration-1000">
+            <h4 className="text-lg font-bold tracking-widest">{video.title}</h4>
             <p className="">{video.description}</p>
           </div>
-          <ReactPlayer url={video.url} width={"80%"} muted playing={playing} />
+          <ReactPlayer url={video.url} width={"100%"} muted playing={playing} />
         </div>
       )}
     </>

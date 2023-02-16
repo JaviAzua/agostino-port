@@ -12,9 +12,9 @@ export default function Home() {
         id="reel"
         className="min-h-[50vh] md:min-h-[70vh] lg:min-h-[90vh]"
       >
-        <div className="hidden lg:block absolute z-40 inset-0 bg-gradient-to-b from-black/5 to-blackB min-h-[50vh] lg:min-h-[115vh]" />
+        <div className="hidden lg:block absolute z-[2] inset-0 bg-gradient-to-b from-black/5 to-blackB min-h-[50vh] lg:min-h-[115vh]" />
         <div className="absolute inset-0">
-          <div className="z-0 relative pt-[56.25%] min-h-[70vh]">
+          <div className="relative pt-[56.25%] min-h-[70vh]">
             {/* Reel */}
             <ReelPage />
           </div>
