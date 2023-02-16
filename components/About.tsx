@@ -27,7 +27,7 @@ function About({}: Props) {
       <h2 className="ml-10 md:ml-0 text-gray-500 flex text-center justify-center font-semibold text-2xl tracking-[2rem]">
         About
       </h2>
-      <div className="max-w-[80%] min-h-[60vh] mx-auto px-10 flex justify-center items-center">
+      <div className="max-w-[80%] min-h-[60vh] mx-auto flex justify-center items-center p-5">
         <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center ">
           <div className="relative py-10 w-80 h-[20rem]">
             <Image
@@ -38,7 +38,7 @@ function About({}: Props) {
             />
           </div>
 
-          <div className="md:max-w-[50%]">
+          <div className="max-w-[50%]">
             <div className=" py-10">
               <h3 className="min-h-5 text-4xl md:text-5xl text-center lg:text-left font-bold mb-10">
                 {mainText} <Cursor cursorColor="#E79E22" />
@@ -60,8 +60,8 @@ function About({}: Props) {
               <SiAdobeaftereffects className="iconAbout" />
               <SiAdobeaudition className="iconAbout" />
               <SiAdobeillustrator className="iconAbout" />
-              <SiBlender className="iconAbout" />
               <SiAdobephotoshop className="iconAbout" />
+              <SiBlender className="iconAbout" />
               <SiAbletonlive className="iconAbout" />
             </div>
           </div>

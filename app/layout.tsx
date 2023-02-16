@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import { Roboto } from "@next/font/google";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -20,9 +21,10 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={(roboto.className, "bg-blackB ")}>
+      <body className={(roboto.className, "bg-blackB scroll-smooth")}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
