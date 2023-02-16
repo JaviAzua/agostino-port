@@ -46,7 +46,7 @@ function Header({}: Props) {
           }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.9, delay: 2 }}
-          className="flex gap-5 md:gap-20"
+          className="hidden md:flex gap-5 md:gap-20"
         >
           <Link to="about" spy={true} smooth={true} duration={500}>
             <motion.li

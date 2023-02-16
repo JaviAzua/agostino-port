@@ -21,11 +21,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body
-        className={
-          (roboto.className, "bg-blackB scroll-smooth sm:scrollbar-hide")
-        }
-      >
+      <body className={(roboto.className, "bg-blackB sm:scrollbar-hide")}>
         <Header />
         {children}
         <Footer />
