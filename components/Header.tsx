@@ -69,6 +69,7 @@ function Header({}: Props) {
                   to="reel"
                   spy={true}
                   smooth={true}
+                  offset={-130}
                   duration={500}
                 >
                   <li className="burguerMenu">Home</li>
@@ -78,6 +79,7 @@ function Header({}: Props) {
                   to="about"
                   spy={true}
                   smooth={true}
+                  offset={-50}
                   duration={500}
                 >
                   <li className="burguerMenu">About</li>
@@ -87,6 +89,7 @@ function Header({}: Props) {
                   to="projects"
                   spy={true}
                   smooth={true}
+                  offset={-100}
                   duration={500}
                 >
                   <li className="burguerMenu">Projects</li>
