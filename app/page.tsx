@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="hidden lg:block absolute z-40 inset-0 bg-gradient-to-b from-black/5 to-blackB min-h-[50vh] lg:min-h-[115vh]" />
+        <div className="hidden lg:block absolute z-40 inset-0 bg-gradient-to-b from-black/5 to-blackB min-h-[50vh] lg:min-h-[120vh]" />
 
         {/* Reel */}
 

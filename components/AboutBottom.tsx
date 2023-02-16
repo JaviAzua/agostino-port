@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import ReviewCard from "./ReviewCard";
 
@@ -10,9 +11,11 @@ function AboutBottom({}: Props) {
         <ReviewCard />
       </div>
       <div>
-        <button className="bg-orangeL px-10 py-5 text-xl font-bold hover:scale-110 duration-500">
-          CONTACT
-        </button>
+        <Link href={"/contact"}>
+          <button className="bg-orangeL px-10 py-5 text-xl font-bold hover:scale-110 duration-500">
+            CONTACT
+          </button>
+        </Link>
       </div>
       <div className="flex flex-col gap-5">
         <ReviewCard />

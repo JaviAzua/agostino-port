@@ -38,7 +38,7 @@ function About({}: Props) {
             />
           </div>
 
-          <div className="max-w-[50%]">
+          <div className="max-w-[70%] md:max-w-[50%]">
             <div className=" py-10">
               <h3 className="min-h-5 text-4xl md:text-5xl text-center lg:text-left font-bold mb-10">
                 {mainText} <Cursor cursorColor="#E79E22" />
