@@ -17,7 +17,7 @@ type Props = {};
 
 function About({}: Props) {
   const [mainText, setMainText] = useTypewriter({
-    words: ["Video editor", "Animator", "Script writer", "Video maker"],
+    words: ["Video Editor", "Animator", "Script Writer", "Video Maker"],
     loop: true,
     delaySpeed: 2000,
   });

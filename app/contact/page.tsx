@@ -2,6 +2,8 @@ import ContactHeader from "@/components/ContactHeader";
 import Image from "next/image";
 import React from "react";
 import PageWrapper from "../page-wrapper";
+import { RiDeleteBack2Fill } from "react-icons/ri";
+import Link from "next/link";
 
 type Props = {};
 
@@ -13,7 +15,7 @@ function page({}: Props) {
         <main className="min-h-[90vh] flex justify-center items-center">
           <section>
             <div>
-              <div className=" bg-blueF min-h-[60vh] w-[90vw] md:w-[70vw] rounded-t-lg">
+              <div className=" bg-blueF min-h-[60vh] w-[90vw] md:w-[50vw] rounded-t-lg">
                 <div className="relative h-[10vh] w-full">
                   <Image
                     src={"/crop.jpeg"}
@@ -22,9 +24,15 @@ function page({}: Props) {
                     className=" object-cover object-right-center rounded-t-lg"
                   />
                 </div>
+                <Link href={"/"}>
+                  <div className="flex gap-2 items-center p-3 group">
+                    <RiDeleteBack2Fill className="group-hover:scale-110 md:w-10 md:h-10 transition-all duration-500" />
+                    <p className="font-semibold">Back</p>
+                  </div>
+                </Link>
                 <h2 className="text-center font-bold text-2xl py-5">CONTACT</h2>
                 <form
-                  action=""
+                  action="https://formspree.io/f/xknarnpq"
                   method="POST"
                   className="flex flex-col p-5 gap-4"
                 >

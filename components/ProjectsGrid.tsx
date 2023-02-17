@@ -6,8 +6,8 @@ type Props = {};
 const videoProps = [
   {
     title: "Video1",
-    description:
-      "GONZA ALGOetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
+    description: `I was recently tasked with providing art direction for a photo shoot for an architecture firm. After the photo shoot, I suggested shooting some additional footage with a pocket camera to add more dimension to the project. The firm was open to my idea, and I gave the actor some basic instructions on what to do. He performed well, and we were able to record the voiceover back at the office.
+    Overall, the project was a success thanks to my quick thinking and willingness to take on new challenges. The additional footage added a dynamic and engaging element to the final product.`,
     url: "https://vimeo.com/799783404",
   },
   {
