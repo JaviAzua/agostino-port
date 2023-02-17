@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import "./globals.css";
 import { Roboto } from "@next/font/google";
 import Footer from "@/components/Footer";
@@ -22,7 +21,6 @@ export default function RootLayout({
       <head />
 
       <body className={(roboto.className, "bg-blackB scrollbar-hide")}>
-        <Header />
         {children}
         <Footer />
       </body>

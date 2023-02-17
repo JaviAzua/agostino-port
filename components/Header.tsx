@@ -30,7 +30,7 @@ function Header({}: Props) {
       } sticky top-0 flex items-center justify-around py-8 z-50 select-none`}
     >
       <div>
-        <Link to="/" spy={true} smooth={true} duration={500}>
+        <Link to="reel" spy={true} smooth={true} offset={-130} duration={500}>
           <Image
             src={"/logoW.svg"}
             alt=""

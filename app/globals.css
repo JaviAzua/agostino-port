@@ -18,6 +18,9 @@
   .iconAbout {
     @apply w-10 h-10 text-white/50;
   }
+  .form_item {
+    @apply flex flex-col;
+  }
 
   .burguerMenu {
     @apply border-b border-t border-white/80 text-center cursor-pointer;

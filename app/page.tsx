@@ -1,11 +1,13 @@
 import About from "@/components/About";
 import AboutBottom from "@/components/AboutBottom";
+import Header from "@/components/Header";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import ReelPage from "@/components/ReelPage";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <div>
         <div className="hidden lg:block absolute z-40 inset-0 bg-gradient-to-b from-black/5 to-blackB min-h-[50vh] lg:min-h-[120vh]" />
 
