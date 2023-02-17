@@ -8,37 +8,37 @@ const videoProps = [
     title: "Video1",
     description:
       "GONZA ALGOetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://www.youtube.com/watch?v=HtReHGjxXfM&t=1s",
+    url: "https://vimeo.com/799783404",
   },
   {
     title: "Video2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://www.youtube.com/watch?v=evpGMuhGUL0",
+    url: "https://vimeo.com/799793512",
   },
   {
     title: "Video3",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://www.youtube.com/watch?v=wfTxV9Eqn5c",
+    url: "https://vimeo.com/799782953",
   },
   {
     title: "Video4",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://www.youtube.com/watch?v=SLqtpO_uulA",
+    url: "https://vimeo.com/799783404",
   },
   {
     title: "Video5",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://www.youtube.com/watch?v=2M4-zGNPzVg",
+    url: "https://vimeo.com/799783404",
   },
   {
     title: "Video6",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://www.youtube.com/watch?v=9jcpHRBgMXg",
+    url: "https://vimeo.com/799783404",
   },
 ];
 

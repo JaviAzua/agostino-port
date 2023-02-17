@@ -42,7 +42,7 @@ function page({}: Props) {
                   </div>
                   <div className="text-center">
                     <button
-                      className="bg-white text-blackB min-w-[15vw] py-2 px-5 font-semibold hover:scale-105 duration-300"
+                      className="bg-white text-blackB min-w-[30vw] py-2  font-semibold hover:scale-105 duration-300"
                       type="submit"
                     >
                       SEND

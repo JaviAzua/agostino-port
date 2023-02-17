@@ -107,15 +107,7 @@ function Header({}: Props) {
             </motion.div>
           )}
         </div>
-        <motion.ul
-          initial={{
-            opacity: 0,
-            translateX: 300,
-          }}
-          animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 1.9, delay: 2 }}
-          className="hidden md:flex gap-5 md:gap-20"
-        >
+        <ul className="hidden md:flex gap-5 md:gap-20">
           <Link to="about" spy={true} smooth={true} duration={500}>
             <motion.li
               whileHover={{ scale: 1.1 }}
@@ -155,7 +147,7 @@ function Header({}: Props) {
               Contact
             </motion.li>
           </Link>
-        </motion.ul>
+        </ul>
       </div>
     </header>
   );
