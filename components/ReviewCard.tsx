@@ -17,9 +17,9 @@ function ReviewCard({ reviewsDB }: Props) {
           <BsFillStarFill />
           <BsFillStarFill />
         </div>
-        <p className="text-sm text-blackB/70">{reviewsDB.review}</p>
+        <p className="text-sm text-blackB/70">{reviewsDB?.review}</p>
       </div>
-      <p className="text-right font-semibold text-xs text-blackB">{`(Review from ${reviewsDB.from})`}</p>
+      <p className="text-right font-semibold text-xs text-blackB">{`(Review from ${reviewsDB?.from})`}</p>
     </div>
   );
 }
