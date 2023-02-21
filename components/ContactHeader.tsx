@@ -7,7 +7,7 @@ type Props = {};
 function ContactHeader({}: Props) {
   return (
     <header
-      className={`sticky top-0 flex bg-blackB items-center justify-around py-8 z-50 select-none`}
+      className={`sticky top-0 flex bg-blackB items-center justify-around py-6 z-50 select-none`}
     >
       <Link href={"/"}>
         <Image

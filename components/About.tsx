@@ -1,5 +1,6 @@
 "use client";
 
+import { AboutT } from "@/types";
 import Image from "next/image";
 import React from "react";
 import {
@@ -12,12 +13,18 @@ import {
   SiAbletonlive,
 } from "react-icons/si";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { urlFor } from "@/lib/client";
 
-type Props = {};
+type Props = {
+  aboutDB: AboutT;
+};
 
-function About({}: Props) {
+function About({ aboutDB }: Props) {
+  const Words = aboutDB.machineText.map((w) => w);
+  const url = urlFor(aboutDB.photo && aboutDB.photo).url();
+
   const [mainText, setMainText] = useTypewriter({
-    words: ["Video Editor", "Animator", "Script Writer", "Video Maker"],
+    words: [Words[0], Words[1], Words[2], Words[3]],
     loop: true,
     delaySpeed: 2000,
   });
@@ -31,7 +38,7 @@ function About({}: Props) {
         <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center ">
           <div className="relative py-10 w-52 h-52 sm:w-60 sm:h-60  md:w-80 md:h-80">
             <Image
-              src={"/FotoGonza.jpeg"}
+              src={url}
               alt=""
               fill
               className="object-cover rounded-full "
@@ -43,17 +50,11 @@ function About({}: Props) {
               <h3 className="min-h-5 text-4xl md:text-5xl text-center lg:text-left font-bold mb-10">
                 {mainText} <Cursor cursorColor="#E79E22" />
               </h3>
-              <p className="textParraf">
-                {`As a professional video editor with a background in cinematic arts, I bring a unique perspective to the art of video editing. I have a passion for crafting visually stunning and engaging videos that effectively communicate a message to the audience. I approach every project with the understanding that the images I'm working with have their own tempo and story to tell, and it's my job to carefully craft these elements into a cohesive final product.`}
-              </p>
+              <p className="textParraf">{aboutDB.bigText[0]}</p>
               <br />
-              <p className="textParraf">
-                {`I have five years of experience working as a freelance video editor and two years of experience working as the Director of Content and Communications for an architecture firm. In this role, I gained valuable experience in creating videos for social media, marketing, podcasts, YouTube channels and more.`}
-              </p>
+              <p className="textParraf">{aboutDB.bigText[1]}</p>
               <br />
-              <p className="textParraf ">
-                {`If you're looking for a video editor who is passionate about the art of video editing and has the skills and experience to create visually stunning and engaging videos that effectively communicate your message, I would love to hear from you. Let's work together to create something amazing.`}
-              </p>
+              <p className="textParraf ">{aboutDB.bigText[2]}</p>
             </div>
             <div className="flex gap-5 justify-center md:justify-end">
               <SiAdobepremierepro className="iconAbout" />

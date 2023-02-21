@@ -1,11 +1,14 @@
+import { ReviewsT } from "@/types";
 import React from "react";
 import { BsFillStarFill } from "react-icons/bs";
 
-type Props = {};
+type Props = {
+  reviewsDB: ReviewsT;
+};
 
-function ReviewCard({}: Props) {
+function ReviewCard({ reviewsDB }: Props) {
   return (
-    <div className="border relative bg-slate-200 rounded-2xl min-h-[5rem] p-5 ">
+    <div className="border lg:max-w-[60%] relative bg-slate-200 rounded-2xl min-h-[5rem] p-5 ">
       <div className="border-b border-blackB space-y-2">
         <div className="flex text-orangeL">
           <BsFillStarFill />
@@ -14,9 +17,9 @@ function ReviewCard({}: Props) {
           <BsFillStarFill />
           <BsFillStarFill />
         </div>
-        <p className="text-sm text-blackB/70">{`"Gonzalo's work exceeded our expectations. He delivered all work on time. He was always available to answer any questions, and he even provided us with helpful suggestions."`}</p>
+        <p className="text-sm text-blackB/70">{reviewsDB.review}</p>
       </div>
-      <p className="text-right font-semibold text-xs text-blackB">{`(Review from Upwork)`}</p>
+      <p className="text-right font-semibold text-xs text-blackB">{`(Review from ${reviewsDB.from})`}</p>
     </div>
   );
 }

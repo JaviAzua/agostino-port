@@ -3,8 +3,28 @@ import AboutBottom from "@/components/AboutBottom";
 import Header from "@/components/Header";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import ReelPage from "@/components/ReelPage";
+import { client } from "@/lib/client";
+import { AboutT, BannerT, ReviewsT, VideoGridT } from "@/types";
 
-export default function Home() {
+export default async function Home() {
+  const bannerQuery = '*[_type == "banner"]';
+  const videoQuery = '*[_type == "videoGrid"]';
+  const aboutQuery = '*[_type == "about"]';
+  const reviewQuery = '*[_type == "reviews"]';
+
+  const bannerImg: BannerT[] = await client.fetch(bannerQuery, {
+    next: { revalidate: 2000 },
+  });
+  const videoGrid: VideoGridT[] = await client.fetch(videoQuery, {
+    next: { revalidate: 1000 },
+  });
+  const aboutDB: AboutT[] = await client.fetch(aboutQuery, {
+    next: { revalidate: 2000 },
+  });
+  const reviewsDB: ReviewsT[] = await client.fetch(reviewQuery, {
+    next: { revalidate: 2000 },
+  });
+
   return (
     <>
       <Header />
@@ -19,14 +39,14 @@ export default function Home() {
         >
           <div className="absolute inset-0">
             <div className="relative pt-[56.25%] min-h-[65vh] select-none">
-              <ReelPage />
+              <ReelPage bannerImg={bannerImg[0]} />
             </div>
           </div>
         </section>
 
         <section id="about" className=" min-h-screen">
           <div className="pt-20 md:pt-5 lg:pt-48">
-            <About />
+            <About aboutDB={aboutDB[0]} />
           </div>
         </section>
 
@@ -36,7 +56,7 @@ export default function Home() {
           className="flex justify-center items-center min-h-screen"
         >
           <div className="pt-10 w-full max-w-[98  %]">
-            <ProjectsGrid />
+            <ProjectsGrid videoGrid={videoGrid} />
           </div>
         </section>
         <section>
@@ -46,7 +66,7 @@ export default function Home() {
             className="min-h-[100vh] grid place-content-center max-w-[60%] mx-auto"
           >
             <div className="">
-              <AboutBottom />
+              <AboutBottom reviewsDB={reviewsDB} />
             </div>
           </section>
         </section>

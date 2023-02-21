@@ -1,56 +1,20 @@
+import { VideoGridT } from "@/types";
 import React from "react";
 import VideoGrid from "./VideoGrid";
 
-type Props = {};
+interface Props {
+  videoGrid: VideoGridT[];
+}
 
-const videoProps = [
-  {
-    title: "Video1",
-    description: `I was recently tasked with providing art direction for a photo shoot for an architecture firm. After the photo shoot, I suggested shooting some additional footage with a pocket camera to add more dimension to the project. The firm was open to my idea, and I gave the actor some basic instructions on what to do. He performed well, and we were able to record the voiceover back at the office.
-    Overall, the project was a success thanks to my quick thinking and willingness to take on new challenges. The additional footage added a dynamic and engaging element to the final product.`,
-    url: "https://vimeo.com/799783404",
-  },
-  {
-    title: "Video2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://vimeo.com/799793512",
-  },
-  {
-    title: "Video3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://vimeo.com/799782953",
-  },
-  {
-    title: "Video4",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://vimeo.com/799783404",
-  },
-  {
-    title: "Video5",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://vimeo.com/799783404",
-  },
-  {
-    title: "Video6",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi illum maiores laborum enim non nulla voluptatem accusantium soluta ad facere aut, nesciunt delectus veniam! Quos quis tempore quaerat et!",
-    url: "https://vimeo.com/799783404",
-  },
-];
-
-function ProjectsGrid({}: Props) {
+function ProjectsGrid({ videoGrid }: Props) {
   return (
     <div className="">
       <h2 className="ml-10 md:ml-0 text-gray-500 flex text-center justify-center font-semibold text-2xl tracking-[2rem]">
         Projects
       </h2>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5">
-        {videoProps.map((video) => (
-          <VideoGrid key={video.description} video={video} />
+        {videoGrid.map((video) => (
+          <VideoGrid key={video.slug} video={video} />
         ))}
       </div>
     </div>

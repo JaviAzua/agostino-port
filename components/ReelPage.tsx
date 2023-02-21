@@ -3,8 +3,13 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
+import { BannerT } from "@/types";
 
-function ReelPage() {
+interface Props {
+  bannerImg: BannerT;
+}
+
+function ReelPage({ bannerImg }: Props) {
   const [hasWindow, setHasWindow] = useState(false);
   const [ismuted, setIsMuted] = useState(true);
 
@@ -25,7 +30,7 @@ function ReelPage() {
             volume={0.5}
             muted={ismuted}
             playing={true}
-            url={"https://vimeo.com/799147188"}
+            url={bannerImg?.url}
             loop
             style={{ position: "absolute", inset: 0, zIndex: 5 }}
           />
