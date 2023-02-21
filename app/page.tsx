@@ -13,16 +13,16 @@ export default async function Home() {
   const reviewQuery = '*[_type == "reviews"]';
 
   const bannerImg: BannerT[] = await client.fetch(bannerQuery, {
-    next: { revalidate: 2000 },
+    next: { revalidate: 20 },
   });
   const videoGrid: VideoGridT[] = await client.fetch(videoQuery, {
-    next: { revalidate: 1000 },
+    next: { revalidate: 20 },
   });
   const aboutDB: AboutT[] = await client.fetch(aboutQuery, {
-    next: { revalidate: 2000 },
+    next: { revalidate: 20 },
   });
   const reviewsDB: ReviewsT[] = await client.fetch(reviewQuery, {
-    next: { revalidate: 2000 },
+    next: { revalidate: 20 },
   });
 
   return (
