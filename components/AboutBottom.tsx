@@ -9,10 +9,14 @@ type Props = {
 
 function AboutBottom({ reviewsDB }: Props) {
   return (
-    <div className="flex items-center flex-col justify-center flex-wrap lg:flex-nowrap gap-5 py-10">
-      <ReviewCard reviewsDB={reviewsDB[0]} />
-      <ReviewCard reviewsDB={reviewsDB[1]} />
-      <ReviewCard reviewsDB={reviewsDB[2]} />
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex gap-5 py-10 items-center">
+        {reviewsDB.map((review) => (
+          <div key={review._id} className="flex-1">
+            <ReviewCard reviewsDB={review} />
+          </div>
+        ))}
+      </div>
       <Link href={"/contact"}>
         <button className="bg-orangeL px-10 py-5 text-xl font-bold hover:scale-110 duration-500">
           CONTACT
