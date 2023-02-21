@@ -13,16 +13,16 @@ export default async function Home() {
   const reviewQuery = '*[_type == "reviews"]';
 
   const bannerImg: BannerT[] = await client.fetch(bannerQuery, {
-    next: { revalidate: 20 },
+    cache: "no-cache",
   });
   const videoGrid: VideoGridT[] = await client.fetch(videoQuery, {
-    next: { revalidate: 20 },
+    cache: "no-cache",
   });
   const aboutDB: AboutT[] = await client.fetch(aboutQuery, {
-    next: { revalidate: 20 },
+    cache: "no-cache",
   });
   const reviewsDB: ReviewsT[] = await client.fetch(reviewQuery, {
-    next: { revalidate: 20 },
+    cache: "no-cache",
   });
 
   return (
