@@ -12,18 +12,10 @@ export default async function Home() {
   const aboutQuery = '*[_type == "about"]';
   const reviewQuery = '*[_type == "reviews"]';
 
-  const bannerImg: BannerT[] = await client.fetch(bannerQuery, {
-    cache: "no-store",
-  });
-  const videoGrid: VideoGridT[] = await client.fetch(videoQuery, {
-    cache: "no-store",
-  });
-  const aboutDB: AboutT[] = await client.fetch(aboutQuery, {
-    cache: "no-store",
-  });
-  const reviewsDB: ReviewsT[] = await client.fetch(reviewQuery, {
-    cache: "no-store",
-  });
+  const bannerImg: BannerT[] = await client.fetch(bannerQuery);
+  const videoGrid: VideoGridT[] = await client.fetch(videoQuery);
+  const aboutDB: AboutT[] = await client.fetch(aboutQuery);
+  const reviewsDB: ReviewsT[] = await client.fetch(reviewQuery);
 
   return (
     <>
