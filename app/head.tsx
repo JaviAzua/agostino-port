@@ -14,7 +14,7 @@ export default function Head() {
       />
       <meta
         property="og:image"
-        content="https://www.gonzaloagostino.com/thumbnail.jpg"
+        content="https://www.gonzaloagostino.com/thumbnail.jpeg"
       />
       <meta property="og:type" content="profile" />
       <meta property="og:url" content="https://www.gonzaloagostino.com/" />
