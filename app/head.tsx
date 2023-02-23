@@ -7,6 +7,7 @@ export default function Head() {
         name="description"
         content="Portfolio of Gonzalo Agostino, made with NextJS 13"
       />
+      <meta property="og:image" content="" />
       <link rel="icon" href="/favicon.ico" />
     </>
   );

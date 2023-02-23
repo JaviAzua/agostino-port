@@ -50,11 +50,12 @@ function About({ aboutDB }: Props) {
               <h3 className="min-h-5 text-4xl md:text-5xl text-center lg:text-left font-bold mb-10">
                 {mainText} <Cursor cursorColor="#E79E22" />
               </h3>
-              <p className="textParraf">{aboutDB.bigText[0]}</p>
-              <br />
-              <p className="textParraf">{aboutDB.bigText[1]}</p>
-              <br />
-              <p className="textParraf ">{aboutDB.bigText[2]}</p>
+              {aboutDB.bigText.map((parraf) => (
+                <div key={parraf}>
+                  <p className="textParraf">{aboutDB.bigText[0]}</p>
+                  <br />
+                </div>
+              ))}
             </div>
             <div className="flex gap-5 justify-center md:justify-end">
               <SiAdobepremierepro className="iconAbout" />
