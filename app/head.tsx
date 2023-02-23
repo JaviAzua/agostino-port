@@ -14,10 +14,10 @@ export default function Head() {
       />
       <meta
         property="og:image"
-        content="https://www.gonzaloagostino.com/thumbnail.jpeg"
+        content="https://www.gonzaloagostino.com/thumbnail.png"
       />
       <meta property="og:type" content="profile" />
-      <meta property="og:url" content="https://www.gonzaloagostino.com/" />
+      <meta property="og:url" content="https://www.gonzaloagostino.com" />
       <link rel="icon" href="/favicon.ico" />
     </>
   );
