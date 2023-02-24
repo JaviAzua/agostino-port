@@ -52,7 +52,7 @@ function About({ aboutDB }: Props) {
               </h3>
               {aboutDB.bigText.map((parraf) => (
                 <div key={parraf}>
-                  <p className="textParraf">{aboutDB?.bigText}</p>
+                  <p className="textParraf">{parraf}</p>
                   <br />
                 </div>
               ))}
