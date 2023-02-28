@@ -9,12 +9,18 @@ type Props = {
 
 function AboutBottom({ reviewsDB }: Props) {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex gap-5 flex-wrap py-10 items-center">
-        {reviewsDB.map((review) => (
+    <div
+      className="flex flex-col gap-4
+     justify-center items-center py-10"
+    >
+      <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-center md:max-w-[60%]">
+        {reviewsDB[3]?.review}
+      </p>
+      <div className="flex flex-wrap md:flex-nowrap gap-5 py-10 items-center">
+        {reviewsDB.slice(0, 3).map((review) => (
           <div
             key={review._id}
-            className="flex-1 last:hidden md:last:inline-flex"
+            className="last:hidden md:flex-1 md:last:inline-flex"
           >
             <ReviewCard reviewsDB={review} />
           </div>

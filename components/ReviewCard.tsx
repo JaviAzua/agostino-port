@@ -10,16 +10,11 @@ function ReviewCard({ reviewsDB }: Props) {
   return (
     <div className="border relative bg-slate-200 rounded-2xl min-h-[5rem] p-5 ">
       <div className="border-b border-blackB space-y-2">
-        <div className="flex text-orangeL">
-          <BsFillStarFill />
-          <BsFillStarFill />
-          <BsFillStarFill />
-          <BsFillStarFill />
-          <BsFillStarFill />
-        </div>
         <p className="text-sm text-blackB/70">{reviewsDB?.review}</p>
       </div>
-      <p className="text-right font-semibold text-xs text-blackB">{`(Review from ${reviewsDB?.from})`}</p>
+      <p className="text-right font-semibold text-xs text-blackB">
+        {reviewsDB?.from}
+      </p>
     </div>
   );
 }

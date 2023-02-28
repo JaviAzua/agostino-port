@@ -33,16 +33,6 @@ function page({}: Props) {
                 </Link>
                 <div className="flex gap-2 items-center p-3">
                   <Link
-                    target={"_blank"}
-                    href={
-                      "https://www.upwork.com/freelancers/~014f58dbab80832b3f"
-                    }
-                  >
-                    <div className="hover:scale-110 transition-all duration-500 bg-white rounded-full p-2 flex justify-center items-center">
-                      <SiUpwork className="cursor-pointer w-6 h-6 md:w-8 md:h-8 text-[#108A00]" />
-                    </div>
-                  </Link>
-                  <Link
                     href={"https://vimeo.com/user53523138"}
                     target={"_blank"}
                   >
