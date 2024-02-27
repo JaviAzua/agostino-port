@@ -7,11 +7,7 @@ type Props = {};
 function Footer({}: Props) {
   return (
     <div className="relative select-none bg-orangeL">
-      <p className="absolute bottom-2 left-10 text-[0.5rem]">
-        ©2023 - Web made by JavierAzua
-      </p>
-
-      <div className="flex items-center justify-end px-2 md:justify-center py-2 right-7 gap-5">
+      <div className="flex items-center justify-center flex-wrap px-2 py-2 right-7 gap-5">
         <p className="text-sm font-semibold">Gonzalo Agostino</p>
         <Link href={"https://vimeo.com/user53523138"} target={"_blank"}>
           <div className="flex items-center gap-2 group cursor-pointer">
@@ -20,6 +16,9 @@ function Footer({}: Props) {
           </div>
         </Link>
       </div>
+      <p className="md:absolute bottom-2 left-10 text-[0.5rem]">
+        ©2023 - Web made by JavierAzua
+      </p>
     </div>
   );
 }

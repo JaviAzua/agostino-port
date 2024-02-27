@@ -30,8 +30,8 @@ function About({ aboutDB }: Props) {
   });
 
   return (
-    <>
-      <h2 className="ml-10 md:ml-0 text-gray-500 flex text-center justify-center font-semibold text-2xl tracking-[2rem]">
+    <article className="overflow-hidden">
+      <h2 className=" text-gray-500 flex text-center justify-center font-semibold text-2xl tracking-[2rem]">
         About
       </h2>
       <div className="max-w-[80%] min-h-[60vh] mx-auto flex justify-center items-center p-5">
@@ -57,7 +57,7 @@ function About({ aboutDB }: Props) {
                 </div>
               ))}
             </div>
-            <div className="flex gap-5 justify-center md:justify-end">
+            <div className="flex md:gap-5 justify-center ">
               <SiAdobepremierepro className="iconAbout" />
               <SiAdobeaftereffects className="iconAbout" />
               <SiAdobeaudition className="iconAbout" />
@@ -70,7 +70,7 @@ function About({ aboutDB }: Props) {
           <br />
         </div>
       </div>
-    </>
+    </article>
   );
 }
 

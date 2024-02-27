@@ -23,12 +23,12 @@ function VideoGrid({ video }: Props) {
   return (
     <>
       {hasWindow && (
-        <div className="relative min-w-full flex flex-col cursor-pointer bg-black/50 justify-center">
+        <div className="relative min-w-full flex flex-col cursor-pointer overflow-hidden bg-black/50 justify-center">
           <div
             onClick={() => setDescrip(!descrip)}
-            className="text-center select-none rounded-sm z-40 hover:scale-125 duration-300 py-2"
+            className="text-center select-none rounded-sm z-40 py-2"
           >
-            <h4 className="text-lg font-bold tracking-widest py-1 ">
+            <h4 className="text-lg font-bold md:hover:scale-125 duration-300 md:tracking-widest py-1">
               {video.name}
             </h4>
             <span className="text-sm "></span>

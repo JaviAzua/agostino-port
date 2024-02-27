@@ -31,7 +31,7 @@ function ReelPage({ bannerImg }: Props) {
             muted={ismuted}
             playing={true}
             url={bannerImg?.url}
-            loop
+            loop={true}
             style={{ position: "absolute", inset: 0, zIndex: 5 }}
           />
           {ismuted ? (
